@@ -19,7 +19,7 @@ const config = {
 		vite: {
 			resolve: {
 				alias: {
-					a12: path.resolve('src/lib')
+					'a12': path.resolve('src/lib')
 				}
 			}
 		}

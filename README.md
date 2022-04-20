@@ -1,38 +1,31 @@
-# create-svelte
+# a12
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+ui components
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Install
 
 ```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
+npm i a12
 ```
 
-## Developing
+## Use
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
+<script>
+	import FeaturesGrid from 'a12/FeaturesGrid.svelte';
+</script>
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
+<FeaturesGrid
+	subtitle="Deploy faster"
+	title="Everything you need to deploy your app"
+	description="Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, "
+	features={[
+		{
+			title: 'Push to Deploy',
+			description:
+				'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+			icon: 'heroicons-outline:cloud-upload'
+		}
+	]}
+/>
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

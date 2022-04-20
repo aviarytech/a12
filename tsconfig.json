@@ -16,10 +16,10 @@
 		"target": "es2020",
 		"baseUrl": ".",
 		"paths": {
-			"$lib": ["src"],
-			"$lib/*": ["src/*"],
-			"@aviarytech/wind": ["src/index.ts"],
-			"@aviarytech/wind/*": ["src/*"]
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"],
+			"a12": ["src/lib/index.js"],
+			"a12/*": ["src/lib/*"]
 		},
 		"outDir": "out"
 	},
