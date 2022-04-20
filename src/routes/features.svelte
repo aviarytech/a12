@@ -1,5 +1,5 @@
 <script>
-	import FeaturesGrid from 'a12/FeaturesGrid.svelte';
+	import { FeaturesGrid } from 'a12';
 </script>
 
 <FeaturesGrid

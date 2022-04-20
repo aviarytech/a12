@@ -1,4 +1,5 @@
 <script lang="ts">
+	import './base.css';
 	import Icon from '@iconify/svelte';
 
 	interface Feature {
@@ -11,14 +12,11 @@
 	export let subtitle: string;
 	export let description: string;
 	export let features: Feature[];
-
-	export let primaryColor: string = 'indigo-600';
-	export let secondaryColor: string = 'indigo-500';
 </script>
 
 <div class="relative bg-white py-16 sm:py-24 lg:py-32">
 	<div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-		<h2 class={`text-base font-semibold uppercase tracking-wider text-${primaryColor}`}>
+		<h2 class="text-base font-semibold uppercase tracking-wider text-indigo-600">
 			{subtitle}
 		</h2>
 		<p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -35,7 +33,7 @@
 							<div class="-mt-6">
 								<div>
 									<span
-										class={`inline-flex items-center justify-center rounded-md bg-${secondaryColor} p-3 shadow-lg`}
+										class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg"
 									>
 										<Icon icon={feature.icon} class="h-6 w-6 text-white" />
 									</span>

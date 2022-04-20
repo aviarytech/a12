@@ -2,17 +2,37 @@
 
 ui components
 
+## Install Dependencies
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init tailwind.config.cjs -p
+mv postcss.config.js postcss.config.cjs
+```
+
 ## Install
 
 ```bash
-npm i a12
+npm install a12
 ```
 
-## Use
+## Configure Tailwind
+
+```js
+module.exports = {
+	content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/a12/**/*.{html,js,svelte,ts}'],
+	theme: {
+		extend: {}
+	},
+	plugins: []
+};
+```
+
+## Use a12
 
 ```
 <script>
-	import FeaturesGrid from 'a12/FeaturesGrid.svelte';
+	import { FeaturesGrid } from 'a12';
 </script>
 
 <FeaturesGrid

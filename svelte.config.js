@@ -11,10 +11,10 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		package: {
-			exports: (file) => file === 'index.js'
+			exports: (file) => file === 'index.js' || file === 'base.css'
 		},
 		files: {
-			lib: 'src'
+			lib: 'src/lib'
 		},
 		vite: {
 			resolve: {
