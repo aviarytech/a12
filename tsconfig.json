@@ -18,6 +18,8 @@
 		"paths": {
 			"$lib": ["src"],
 			"$lib/*": ["src/*"],
+			"@aviarytech/wind": ["src/index.ts"],
+			"@aviarytech/wind/*": ["src/*"]
 		},
 		"outDir": "out"
 	},

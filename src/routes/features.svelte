@@ -1,5 +1,5 @@
 <script>
-	import FeaturesGrid from '$lib/components/ui/sections/features-grid.svelte';
+	import FeaturesGrid from '@aviarytech/wind/features-grid.svelte';
 </script>
 
 <FeaturesGrid
