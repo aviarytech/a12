@@ -2,6 +2,12 @@
 
 ui components
 
+relies:
+
+- svelte
+- tailwind
+- [iconify](https://icon-sets.iconify.design/)
+
 ## Install Dependencies
 
 ```bash
