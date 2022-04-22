@@ -14,7 +14,7 @@
 	export let features: Feature[];
 </script>
 
-<div class="relative bg-white py-16 sm:py-24 lg:py-32">
+<div class="bg-white">
 	<div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
 		<h2 class="text-base font-semibold uppercase tracking-wider text-indigo-600">
 			{subtitle}
